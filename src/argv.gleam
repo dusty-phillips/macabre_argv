@@ -18,6 +18,5 @@ pub fn load() -> Argv {
   Argv(runtime: runtime, program: program, arguments: arguments)
 }
 
-@external(erlang, "argv_ffi", "load")
-@external(javascript, "./argv_ffi.mjs", "load")
+@external(python, "argv_bindings", "load")
 fn do() -> #(String, String, List(String))
