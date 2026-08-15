@@ -1,12 +1,11 @@
 name = "macabre_argv"
 version = "1.1.0"
-description = "A Gleam library for accessing the command-line arguments passed to the program (macabre python-target port of argv)"
-
+description = "A cross platform library for getting the command line arguments"
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "dusty-phillips", repo = "macabre_argv" }
 
 [dependencies]
-macabre_stdlib = { git = "git@github.com:dusty-phillips/macabre_stdlib.git", ref = "main" }
+gleam_stdlib = { git = "git@github.com:dusty-phillips/macabre_stdlib.git", ref = "main" }
 
 [dev-dependencies]
-gleeunit = "~> 1.0"
+gleeunit = { git = "git@github.com:dusty-phillips/macabre_gleeunit.git", ref = "main" }
